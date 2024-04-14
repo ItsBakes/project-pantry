@@ -16,15 +16,15 @@ const findOne = async (req, res) => {
 
         if (recipesFound.length === 0) {
             return res.status(404).json({
-                message: `Warehouse with ID ${req.params.id} not found`
+                message: `recipe with ID ${req.params.id} not found`
             });
         }
 
-        const warehouseData = recipesFound[0];
-        res.json(warehouseData);
+        const recipeData = recipesFound[0];
+        res.json(recipeData);
     } catch (error) {
         res.status(500).json({
-            message: `Unable to retrieve Warehouse data for Warehouse with ID ${req.params.id}`,
+            message: `Unable to retrieve recipe data for recipe with ID ${req.params.id}`,
         });
     }
 };
