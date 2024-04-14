@@ -4,6 +4,8 @@ import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import RecipeFindPage from "./pages/RecipeFindPage";
 import HomePage from "./pages/HomePage";
+import RecipeSelect from './pages/RecipeSelect';
+import SingleRecipePage from './pages/SingleRecipePage';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Routes>
       <Route path="/" element={<HomePage/>} />
       <Route path="/find" element={<RecipeFindPage/>}/>
+      <Route path="/recipes" element={<RecipeSelect/>}/>
+      <Route path="/recipe/:id" element={<SingleRecipePage />} />
       <Route />
 
 
