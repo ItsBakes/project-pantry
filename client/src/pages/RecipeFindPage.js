@@ -1,10 +1,9 @@
 import React from 'react'
 
-function RecipeFindPage () {
-    return(
-        <>
-        </>
-    )
+const RecipeFindPage = () => {
+  return (
+    <div>RecipeFindPage</div>
+  )
 }
 
 export default RecipeFindPage

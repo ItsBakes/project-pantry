@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
       <Route path="/" element={<HomePage/>} />
-      <Route path="/find" element={<RecipeFindPage/>}/>
+      <Route path="/search" element={<RecipeFindPage/>}/>
       <Route path="/recipes" element={<RecipeSelect/>}/>
       <Route path="/recipe/:id" element={<SingleRecipePage />} />      
       </Routes>      
