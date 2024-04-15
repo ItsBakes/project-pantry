@@ -1,8 +1,9 @@
 import React from 'react'
+import FindRecipe from '../Components/FindRecipe/FindRecipe'
 
 const RecipeFindPage = () => {
   return (
-    <div>RecipeFindPage</div>
+    <FindRecipe/>
   )
 }
 
