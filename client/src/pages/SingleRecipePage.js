@@ -1,8 +1,9 @@
 import React from 'react'
+import SingleRecipe from '../Components/SingleRecipe/SingleRecipe'
 
-const SingleRecipePage = () => {
+function SingleRecipePage() {
   return (
-    <div>SingleRecipePage</div>
+    <SingleRecipe/>
   )
 }
 

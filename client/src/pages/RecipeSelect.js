@@ -1,8 +1,9 @@
 import React from 'react'
+import SelectRecipe from '../Components/SelectRecipe/SelectRecipe'
 
-const RecipeSelect = () => {
+function RecipeSelect({Results}) {
   return (
-    <div>RecipeSelect</div>
+    <SelectRecipe Results={Results}/>
   )
 }
 

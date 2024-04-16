@@ -1,9 +1,9 @@
 import React from 'react'
 import FindRecipe from '../Components/FindRecipe/FindRecipe'
 
-const RecipeFindPage = () => {
+function RecipeFindPage({setResults}) {
   return (
-    <FindRecipe/>
+    <FindRecipe setResults={setResults}/>
   )
 }
 
