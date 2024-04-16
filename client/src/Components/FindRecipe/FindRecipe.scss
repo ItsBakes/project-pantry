@@ -45,6 +45,9 @@
         border: $border-border;
         margin-top: .5rem;
         margin-left: .25rem;
+        &:focus {
+            border-color: $color-green;
+        }
 
     }
     &__option {
