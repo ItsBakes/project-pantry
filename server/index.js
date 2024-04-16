@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-// qurery 
+// query 
 const recipeRoutes = require('./routes/recipe-routes');
 app.use('/', recipeRoutes)
 
