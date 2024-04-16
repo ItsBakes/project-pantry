@@ -2,8 +2,7 @@
 
 
 .Home {
-    margin: 5% 15%;
-    width: 70%;
+    margin: $main-margin;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,9 +17,9 @@
         border: none;
         background-color: $color-green;
         color: white;
-        padding: .75rem;
-        border-radius: 1.25rem;
+        padding: $button-padding;
+        border-radius: $border-rad;
         text-transform: capitalize;
-        margin-top: 1.5rem;
+        margin-top: $top-margin;
     }
 }

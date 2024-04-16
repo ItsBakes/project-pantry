@@ -51,41 +51,41 @@ function FindRecipe({ setResults }) {
     return (
         <main className='FindRecipe'>
             <form className='FindRecipe__form' onSubmit={handleSubmit}>
-                <h3>search for recipes</h3>
+                <h3  className='FindRecipe__h3'>search for recipes</h3>
                 <label className='FindRecipe__label'>search recipes by ingredients:
                     <input type='search' id='search-r' placeholder='search ingredients' className='FindRecipe__input' onChange={handleChange}></input></label>
-                <h3>or pick form what you have</h3>
-                <label>protein: 
-                    <select name='protein' id='protein-q' onChange={(e) => setProtein(e.target.value)}>
-                        <option value={empty}>Please select an item</option>
-                        <option value='chicken'>chicken</option>
-                        <option value='beef'>beef</option>
-                        <option value='pork'>pork</option>
-                        <option value='fish'>fish</option>
-                        <option value='vegan'>vegan</option>
-                        <option value='vegetarian'>vegetarian</option>
+                <h3 className='FindRecipe__h3'>or pick from what you have</h3>
+                <label className='FindRecipe__label'>protein: 
+                    <select className='FindRecipe__select' name='protein' id='protein-q' onChange={(e) => setProtein(e.target.value)}>
+                        <option  className='FindRecipe__option' value={empty}>Please select an item</option>
+                        <option  className='FindRecipe__option' value='Chicken'>Chicken</option>
+                        <option  className='FindRecipe__option' value='Beef'>Beef</option>
+                        <option  className='FindRecipe__option' value='Pork'>Pork</option>
+                        <option  className='FindRecipe__option' value='Fish'>Fish</option>
+                        <option  className='FindRecipe__option' value='Vegan'>Vegan</option>
+                        <option  className='FindRecipe__option' value='Vegetarian'>Vegetarian</option>
                     </select></label>
-                <label>style: 
-                    <select name='type' id='cuisine-q' onChange={(e) => setCuisine(e.target.value)}>
-                        <option value={empty}>Please select an item</option>
-                        <option value='american'>american</option>
-                        <option value='asian'>asian</option>
-                        <option value='french'>french</option>
-                        <option value='indian'>indian</option>
-                        <option value='mediterranean'>mediterranean</option>
-                        <option value='mexican'>mexican</option>
-                        <option value='italian'>italian</option>
+                <label className='FindRecipe__label'>style: 
+                    <select className='FindRecipe__select' name='type' id='cuisine-q' onChange={(e) => setCuisine(e.target.value)}>
+                        <option  className='FindRecipe__option' value={empty}>Please select an item</option>
+                        <option  className='FindRecipe__option' value='American'>American</option>
+                        <option  className='FindRecipe__option' value='Asian'>Asian</option>
+                        <option  className='FindRecipe__option' value='French'>French</option>
+                        <option  className='FindRecipe__option' value='Indian'>Indian</option>
+                        <option  className='FindRecipe__option' value='Mediterranean'>Mediterranean</option>
+                        <option  className='FindRecipe__option' value='Mexican'>Mexican</option>
+                        <option  className='FindRecipe__option' value='Italian'>Otalian</option>
                     </select></label>
-                <label>dietary restrictions: 
-                    <select name='health' id='health-q' onChange={(e) => setDiet(e.target.value)}>
-                        <option value={empty}>Please select an item</option>
-                        <option value='gluten-free'>gluten-free</option>
-                        <option value='paleo'>paleo</option>
-                        <option value='pescatarian'>pescatarian</option>
-                        <option value='vegan'>vegan</option>
-                        <option value='vegetarian'>vegetarian</option>
+                <label className='FindRecipe__label'>dietary restrictions: 
+                    <select className='FindRecipe__select' name='health' id='health-q' onChange={(e) => setDiet(e.target.value)}>
+                        <option  className='FindRecipe__option' value={empty}>Please select an item</option>
+                        <option  className='FindRecipe__option' value='Gluten-Free'>Gluten-Free</option>
+                        <option  className='FindRecipe__option' value='Paleo'>Paleo</option>
+                        <option  className='FindRecipe__option' value='Pescatarian'>Pescatarian</option>
+                        <option  className='FindRecipe__option' value='Vegan'>Vegan</option>
+                        <option  className='FindRecipe__option' value='Vegetarian'>Vegetarian</option>
                     </select></label>
-                <button type='submit'>let's get cooking!</button>
+                <button className='FindRecipe__button' type='submit'>let's get cooking!</button>
             </form>
         </main>
     )
