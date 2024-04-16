@@ -23,15 +23,10 @@ function FindRecipe({ setResults }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(Search)
-        console.log(Protein)
-        console.log(Cuisine)
-        console.log(Diet)
         if (Search) {
             try {
                 const response = await axios.get(`${searchURL}?query=${Search}&number=6${apiKey}`)
                 setResults(response.data.results)
-                console.log(response.data.results)
                 navigate('/recipes')
 
             }
@@ -41,7 +36,6 @@ function FindRecipe({ setResults }) {
         } else if (Protein || Cuisine || Diet) {
             try {
                 const response = await axios.get(`${ingredientsURL}?ingredients=${Protein}&type=${Cuisine}&diet=${Diet}&number=6${apiKey}`)
-                console.log(response.data)
                 setResults(response.data)
                 navigate('/recipes')
             } catch (error) {

@@ -1,0 +1,26 @@
+@use "../../assets/styles/variables" as *;
+
+
+.Home {
+    margin: 5% 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__welcome {
+        font-family: "Inter-Bold", sans-serif;
+        text-transform: capitalize;
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-green;
+        color: white;
+        padding: .75rem;
+        border-radius: 1.25rem;
+        text-transform: capitalize;
+        margin-top: 1.5rem;
+    }
+}

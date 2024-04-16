@@ -1,0 +1,10 @@
+@use "./assets/styles/variables" as *;
+
+* {
+    background-color: $color-offWhite;
+}
+
+main {
+    font-family: 'Inter';
+    
+}
