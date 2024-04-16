@@ -1,0 +1,11 @@
+@use "../../assets/styles/variables" as *;
+
+.Header {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+}

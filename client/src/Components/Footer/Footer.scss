@@ -1,0 +1,8 @@
+@use "../../assets/styles/variables" as *;
+
+.Footer {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    font-size: .75rem;
+}

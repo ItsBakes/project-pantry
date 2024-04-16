@@ -4,8 +4,10 @@ import './Header.scss'
 function Header () {
     return (
         <>
-        <h3 className='Header__title'>Project-Pantry</h3>
-        <Link to='/search'><button>Search recipes</button></Link>
+        <header className='Header'>
+        
+        <Link className='Header__link' to='/search'><h3 className='Header__title'>Project-Pantry</h3></Link>
+        </header>
         </>
     )
 }
