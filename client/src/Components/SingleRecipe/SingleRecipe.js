@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import "./SingleRecipe.scss"
 
 
 function SingleRecipe() {
@@ -32,28 +33,28 @@ function SingleRecipe() {
 
     return (
 
-        <main>
-            <h2>{Recipe?.title}</h2>
-            <img src={Recipe?.image} />
-            <section>
-                <article>
-                    <h3>ingredients</h3>
-                    <ul>
+        <main className='SingleRecipe'>
+            <h2 className='SingleRecipe__title'>{Recipe?.title}</h2>
+            <img className='SingleRecipe__image' src={Recipe?.image} />
+            <section className='SingleRecipe__section'>
+                <article className='SingleRecipe__ingredients--container'>
+                    <h3 className='SingleRecipe__ingredients'>ingredients</h3>
+                    <ul className='SingleRecipe__ingredients--list'>
                         {Recipe?.extendedIngredients.map((ingredient) => {
                             return (
-                            <li>
+                            <li className='SingleRecipe__ingredients--item'>
                                 {ingredient.original}
                             </li>
                             )
                         })}
                     </ul>
                 </article>
-                <article>
-                    <h3>instructions</h3>
-                    <ol>
+                <article className='SingleRecipe__instructions--container'>
+                    <h3 className='SingleRecipe__instructions'>instructions</h3>
+                    <ol className='SingleRecipe__instructions--list'>
                         {Recipe?.analyzedInstructions[0].steps.map((step) => {
                             return (
-                                <li>
+                                <li className='SingleRecipe__instructions--item'>
                                     {step.step}
                                 </li>
                             )
@@ -61,13 +62,9 @@ function SingleRecipe() {
                     </ol>
                 </article>
             </section>
-            <section>
-                <Link to='/search'>search again</Link>
-            </section>
         </main>
     )
 }
 
 export default SingleRecipe
 
-// make sure to pick recipes that i know work for the demo. Keep it simple.

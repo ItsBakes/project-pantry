@@ -1,0 +1,37 @@
+@use "../../assets/styles/variables" as *;
+
+.SingleRecipe {
+    margin: $main-margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    &__image {
+        border-radius: $border-rad;
+        margin-bottom: 1rem;
+        box-shadow: 0 0 0.4rem $color-shadow;
+        
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__ingredients, &__instructions {
+        text-transform: capitalize;
+        &--container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__instructions {
+        &--item {
+            margin: 1rem;
+        }
+    }
+    
+}
